@@ -1,0 +1,155 @@
+@charset "uft-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); 
+
+a{
+    color:#000;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+.ttl{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 8px 0px #ddd;
+    margin-top:50px;
+    margin-left: 250px;
+}
+
+
+/*ヘッダー*/
+
+.page-header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.area-logo-header-p{
+    font-size: 60px;
+}
+
+.nav-header{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top:34px;
+    list-style: none;
+    font-weight: bold;
+}
+li{
+    margin-left: 36px;
+}
+.nav-header a:hover{
+color:blueviolet
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+
+
+/* ABOUT */
+.img-me{
+    width: 300px;
+    height: auto;
+}
+
+.area-home-about>.container{
+  display: flex;
+  margin-top: 40px;
+  margin-left: 400px;
+}
+.img+.text-home{
+    /* 2カラムレイアウトは２つの要素をまずはワイド50％ずつにする 。そしてその二つの親要素にdisplay:flexをかける*/
+    width: 50%;
+}
+.layout-2-div{
+    display: flex;
+}
+.btnarea{
+    display: flex;
+}
+.grid-area{
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.description-name{
+    font-size: 27px;
+    padding-bottom: 20px;
+}
+.description-sub{
+    font-size:19px;
+}
+/* strength */
+/* このコンテナはグリッドにする */
+
+.area-home-strength>.container{
+    position: relative;
+    height: 550px;
+  
+}
+.body-home-strength{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.list-strength{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) 
+}
+.img{
+    width: 100%;
+
+    height: 300px;
+ 
+    object-fit: contain;
+}
+.strength-title{
+    font-size: 23px;
+    text-shadow: 5px 8px 0px #ddd;
+}
+.description{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* like */
+.area-home-like{
+    height: 500px;
+}
+.body-home-like{
+    display: flex;
+}
+.img-camp{
+    width: 400px;
+    height: auto;
+}
+.area-home-like>.container{
+    position: relative;
+}
+.body-home-like{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%);
+    margin-top:100px;
+}
+.img-camp{
+    padding-right:30px;
+}
+.description-like{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.description-like{
+    font-size: 19px;
+}
+footer{
+    margin-bottom: 20px;
+    transform: translate(1000px,100px);
+}

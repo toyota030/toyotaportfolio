@@ -1,0 +1,228 @@
+@charset "uft-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); 
+
+a{
+    color:#000;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.ttl{
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 5px 8px 0px #ddd;
+    text-align: center;
+    margin-top:50px;
+}
+
+
+/*ヘッダー*/
+
+.page-header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.area-logo-header-p{
+    font-size: 60px;
+}
+
+.nav-header{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top:34px;
+    list-style: none;
+    font-weight: bold;
+}
+li{
+    margin-left: 36px;
+}
+.nav-header a:hover{
+color:blueviolet
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+
+/* TOP */
+.area-top-view-wrapper{
+    background-image: url(images/名称未設定のデザイン\ \(13\).png);
+    background-size: cover;
+    min-height: 100vh;
+    /* 親要素にレラティブをいれ小要素にアブソリュート、トランスフォーム、トップ、レフトをかける。ただしすべてブロック要素で */
+    position: relative;
+}
+
+.area-top-view {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+.area-top-one{
+    font-size: 44px;
+    text-shadow: 5px 8px 0px #ddd;
+    font-weight: bold;
+
+}
+.area-top{
+    font-size:90px;
+    text-shadow: 5px 8px 0px #ddd;
+    font-weight: bold;
+}
+.area-top-sub{
+    font-size: 44px;
+    text-shadow: 5px 8px 0px #ddd;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ABOUT */
+.area-home-about{
+    height: 550px;
+    position: relative;
+    /* 親要素にレラティブ、小要素にアブソリュートtop:50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+.area-home-about>.container{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.body-home{
+    padding-top:65px;
+}
+.img+.text-home{
+    /* 2カラムレイアウトは２つの要素をまずはワイド50％ずつにする 。そしてその二つの親要素にdisplay:flexをかける*/
+    width: 50%;
+}
+.layout-2-div{
+    display: flex;
+}
+
+.img-me{
+    /* 画像の比率を変えずに縮小する */
+    width:230px;   
+    height: auto;
+    padding-right: 50px;
+}
+.grid-area{
+    padding-left: 50px;
+    margin-top: 90px;
+}
+.description{
+    font-size: 20px;
+    
+}
+.btnarea{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.btnarea-protfoilo{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+button{
+    /* 「em」は フォントサイズを基準に指定する幅指定で、「○文字分開ける」といった指定を */
+    width: 9em;
+    height: 3em;
+}
+
+
+/* service */
+.img-icon{
+    width: 40%;
+}
+.text-home{
+    width: 60%;
+}
+.body-home{
+    display: flex;
+}
+.area-home-service{
+    height: 500px;
+    position: relative;
+    margin-top: 50px;
+}
+ /* 親要素にレラティブ、小要素にアブソリュートtop:50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+.area-home-service>.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.ttl{
+    padding-top: 100px;
+}
+.img-icon{
+    /* 画像を上にずらす */
+    transform: translateY(-100px);
+    /* 画像の比率を変えずに縮小する */
+    width:500px;   
+    height: auto;
+
+}
+.description-design{
+    margin-bottom: 20px;
+}
+
+
+/* WORK */
+/* このコンテナはグリッドにする */
+.area-home-work{
+    position: relative;
+    height: 500px;
+  
+}
+.area-home-work>.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+
+}
+.list-work{
+    display: grid;
+    grid-template-columns: 300px 300px 300px; 
+}
+
+
+
+/* CONTACT */
+.area-home-contact{
+    margin-bottom: 30px;
+    position:relative;
+
+}
+.area-home-contact>.container{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.body-home-contact-p{
+    font-size:30px;
+    text-decoration-line: underline;
+}
+
+
+/* フッター */
+footer{
+    margin-bottom: 20px;
+    transform: translate(1000px,100px);
+}

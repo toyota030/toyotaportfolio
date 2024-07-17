@@ -1,0 +1,106 @@
+@charset "uft-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css); 
+
+a{
+    color:#000;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+.ttl{
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 8px 0px #ddd;
+    margin-top:50px;
+    margin-left: 500px;
+}
+
+
+/*ヘッダー*/
+
+.page-header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.area-logo-header-p{
+    font-size: 60px;
+}
+
+.nav-header{
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top:34px;
+    list-style: none;
+    font-weight: bold;
+}
+li{
+    margin-left: 36px;
+}
+.nav-header a:hover{
+color:blueviolet
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+
+}
+
+/* コンタクト */
+.contact-input-field-wrapper{
+    position: relative;
+}
+
+.contact-input-field{
+    
+    /* ラベルと入力欄を縦入力する */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+   
+}
+.contact-input-field>input{
+    /* 箱を消して下線のみにする */
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding-top: 10px;
+}
+.contact-input-field>textarea{
+    padding-top: 150px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+}
+.contact-input-field-wrapper{
+    margin-top: 70px;
+    width: 450px;
+    margin-left: 500px;
+}
+
+.button{
+    border-radius: 30px !important;
+    margin-top: 40px;
+    margin-left: 500px;
+    /* ボタンサイズ変更 */
+    width: 120px;
+    height: 50px;
+    background-color: yellow;
+    font-weight: bold;
+    border: none;
+    
+    
+}
+
+
+
+
+
+footer{
+    margin-bottom: 20px;
+    transform: translate(1000px,100px);
+}
